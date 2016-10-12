@@ -3,17 +3,9 @@ import requests
 import csv
 
 # Create an OpenerDirector with support for Basic HTTP Authentication...
-#https://api.github.com/orgs/daptiv/repos gets all the repos details
 #Example info needed for this program to work. 
-# Token = "ef8f22920253fb57ec5f2730292907ad7f00443a"
+# Token = define your token here.
 # response = requests.get(url, headers={"Authorization": "Bearer %s" %Token})
-# DaptivPpmPRComments = 'https://api.github.com/repos/daptiv/Ppm/4136/comments'
-# DaptivPullsLinks = 'https://api.github.com/repos/daptiv/Ppm/pulls'
-# DaptivPpmPrclosed = 'https://api.github.com/repos/daptiv/Ppm/pulls?state=closed&page=1&per_page=100'
-# DaptivPpmPrLink = 'https://api.github.com/repos/daptiv/Ppm/pulls?state=open&page=1&per_page=100'
-# comments = 'https://api.github.com/repos/daptiv/Ppm/comments/0f0a48e6995b4e0e28cee36aca5c523be1f8d710'
-# comment_user = 'https://api.github.com/repos/daptiv/Ppm/comments/{0}'
-
 #Authorization Token and url passed to this method to return data
 def Authorization(Token, url):
     response = requests.get(url, headers={"Authorization": "Bearer %s" %Token})
