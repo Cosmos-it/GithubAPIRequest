@@ -1,4 +1,4 @@
-# GithubMetricPy
+# Github API Request
 GitHub Metrics application for Daptiv company
 
 ## How to run it.
